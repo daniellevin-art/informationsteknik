@@ -1,0 +1,19 @@
+# Datorns hårdvara
+
+::: {.callout-note appearance="minimal"}
+**Centralt innehåll som behandlas i detta kapitel**
+
+- Datorns hårdvara, däribland olika processortyper och deras användningsområden.
+:::
+
+## Datorns huvudkomponenter
+
+*[Att fyllas i: CPU, minne (RAM), lagring, moderkort, GPU — översikt.]*
+
+## Processortyper och användningsområden
+
+*[Att fyllas i: CPU vs GPU vs mikrokontroller, ARM vs x86, var respektive typ passar.]*
+
+## Övningar
+
+*[Att fyllas i: t.ex. plocka isär en (avstängd/tömd) dator eller identifiera komponenter från bilder.]*

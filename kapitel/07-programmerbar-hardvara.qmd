@@ -1,0 +1,19 @@
+# Hårdvara som kan programmeras
+
+::: {.callout-note appearance="minimal"}
+**Centralt innehåll som behandlas i detta kapitel**
+
+- Hårdvarans funktioner och komponenter samt hur den kan programmeras till att utföra enkla uppgifter.
+:::
+
+## Från fast till programmerbar hårdvara
+
+*[Att fyllas i: skillnad mellan fast logik och programmerbar hårdvara.]*
+
+## Enkla styrexempel
+
+*[Att fyllas i: t.ex. mikrokontroller (Arduino/motsvarande) som styr en enkel komponent — introducerande nivå, ej lika djupt som Teknik 1.]*
+
+## Övningar
+
+*[Att fyllas i: praktiskt hands-on-moment.]*

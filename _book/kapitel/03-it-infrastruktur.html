@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; IT-infrastrukturens uppbyggnad – Informationsteknik Nivå 1</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../kapitel/04-datalagring.html" rel="next">
+<link href="../kapitel/02-manniskan-och-tekniken.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-3c0d0a502040698e71afe2f01ba0e011.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Inget resultat",
+    "search-matching-documents-text": "matchande dokument",
+    "search-copy-link-title": "Kopiera länk för att söka",
+    "search-hide-matches-text": "Göm ytterligare resultat",
+    "search-more-match-text": "annat resultat i detta dokument",
+    "search-more-matches-text": "fler resultat i detta dokument",
+    "search-clear-button-title": "Rensa",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Avbryt",
+    "search-submit-button-title": "Verkställ",
+    "search-label": "Sök"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Skifta sidonavigering" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../kapitel/03-it-infrastruktur.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">IT-infrastrukturens uppbyggnad</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Skifta sidonavigering" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Sök" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Informationsteknik Nivå 1</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Sök"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Förord</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/01-introduktion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduktion till informationsteknik</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/02-manniskan-och-tekniken.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Människan och den digitala tekniken</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/03-it-infrastruktur.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">IT-infrastrukturens uppbyggnad</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/04-datalagring.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Datalagring och filhantering</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/05-datorns-hardvara.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Datorns hårdvara</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-operativsystem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Operativsystem</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/07-programmerbar-hardvara.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Hårdvara som kan programmeras</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/08-projektarbete.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Projektarbete och problemlösning</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/09-it-sakerhet-risker.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">IT-säkerhet: risker</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/10-it-sakerhet-rutiner.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">IT-säkerhet: rutiner och arbetssätt</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Innehållsförteckning</h2>
+   
+  <ul>
+  <li><a href="#vad-är-it-infrastruktur" id="toc-vad-är-it-infrastruktur" class="nav-link active" data-scroll-target="#vad-är-it-infrastruktur"><span class="header-section-number">3.1</span> Vad är it-infrastruktur?</a>
+  <ul class="collapse">
+  <li><a href="#olika-storlekar-på-nätverk" id="toc-olika-storlekar-på-nätverk" class="nav-link" data-scroll-target="#olika-storlekar-på-nätverk"><span class="header-section-number">3.1.1</span> Olika storlekar på nätverk</a></li>
+  </ul></li>
+  <li><a href="#nätverkets-grundbyggstenar" id="toc-nätverkets-grundbyggstenar" class="nav-link" data-scroll-target="#nätverkets-grundbyggstenar"><span class="header-section-number">3.2</span> Nätverkets grundbyggstenar</a>
+  <ul class="collapse">
+  <li><a href="#hemrouter-allt-i-en-låda" id="toc-hemrouter-allt-i-en-låda" class="nav-link" data-scroll-target="#hemrouter-allt-i-en-låda"><span class="header-section-number">3.2.1</span> Hemrouter: allt i en låda</a></li>
+  </ul></li>
+  <li><a href="#hur-enheter-kommunicerar" id="toc-hur-enheter-kommunicerar" class="nav-link" data-scroll-target="#hur-enheter-kommunicerar"><span class="header-section-number">3.3</span> Hur enheter kommunicerar</a>
+  <ul class="collapse">
+  <li><a href="#datapaket" id="toc-datapaket" class="nav-link" data-scroll-target="#datapaket"><span class="header-section-number">3.3.1</span> Datapaket</a></li>
+  <li><a href="#ip-adresser" id="toc-ip-adresser" class="nav-link" data-scroll-target="#ip-adresser"><span class="header-section-number">3.3.2</span> IP-adresser</a></li>
+  <li><a href="#dns-internets-telefonkatalog" id="toc-dns-internets-telefonkatalog" class="nav-link" data-scroll-target="#dns-internets-telefonkatalog"><span class="header-section-number">3.3.3</span> DNS — internets telefonkatalog</a></li>
+  <li><a href="#klientserver-modellen" id="toc-klientserver-modellen" class="nav-link" data-scroll-target="#klientserver-modellen"><span class="header-section-number">3.3.4</span> Klient–server-modellen</a></li>
+  <li><a href="#portar" id="toc-portar" class="nav-link" data-scroll-target="#portar"><span class="header-section-number">3.3.5</span> Portar</a></li>
+  </ul></li>
+  <li><a href="#övningar" id="toc-övningar" class="nav-link" data-scroll-target="#övningar"><span class="header-section-number">3.4</span> Övningar</a></li>
+  <li><a href="#laborationer" id="toc-laborationer" class="nav-link" data-scroll-target="#laborationer"><span class="header-section-number">3.5</span> Laborationer</a>
+  <ul class="collapse">
+  <li><a href="#lab-1-din-dators-nätverksidentitet" id="toc-lab-1-din-dators-nätverksidentitet" class="nav-link" data-scroll-target="#lab-1-din-dators-nätverksidentitet"><span class="header-section-number">3.5.1</span> Lab 1: Din dators nätverksidentitet</a></li>
+  <li><a href="#lab-2-ping-finns-du-där" id="toc-lab-2-ping-finns-du-där" class="nav-link" data-scroll-target="#lab-2-ping-finns-du-där"><span class="header-section-number">3.5.2</span> Lab 2: Ping — finns du där?</a></li>
+  <li><a href="#lab-3-traceroute-paketens-resväg" id="toc-lab-3-traceroute-paketens-resväg" class="nav-link" data-scroll-target="#lab-3-traceroute-paketens-resväg"><span class="header-section-number">3.5.3</span> Lab 3: Traceroute — paketens resväg</a></li>
+  <li><a href="#lab-4-dns-detektiven" id="toc-lab-4-dns-detektiven" class="nav-link" data-scroll-target="#lab-4-dns-detektiven"><span class="header-section-number">3.5.4</span> Lab 4: DNS-detektiven</a></li>
+  <li><a href="#lab-5-se-klientserver-live-i-webbläsaren" id="toc-lab-5-se-klientserver-live-i-webbläsaren" class="nav-link" data-scroll-target="#lab-5-se-klientserver-live-i-webbläsaren"><span class="header-section-number">3.5.5</span> Lab 5: Se klient–server live i webbläsaren</a></li>
+  <li><a href="#lab-6-rita-ett-nätverk" id="toc-lab-6-rita-ett-nätverk" class="nav-link" data-scroll-target="#lab-6-rita-ett-nätverk"><span class="header-section-number">3.5.6</span> Lab 6: Rita ett nätverk</a></li>
+  <li><a href="#extra-bygg-ett-nätverk-i-packet-tracer" id="toc-extra-bygg-ett-nätverk-i-packet-tracer" class="nav-link" data-scroll-target="#extra-bygg-ett-nätverk-i-packet-tracer"><span class="header-section-number">3.5.7</span> Extra: Bygg ett nätverk i Packet Tracer</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">IT-infrastrukturens uppbyggnad</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Centralt innehåll som behandlas i detta kapitel</strong></p>
+<ul>
+<li>It-infrastrukturens olika delar samt hur de samverkar och kommunicerar.</li>
+</ul>
+</div>
+</div>
+</div>
+<section id="vad-är-it-infrastruktur" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="vad-är-it-infrastruktur"><span class="header-section-number">3.1</span> Vad är it-infrastruktur?</h2>
+<p>När du öppnar en app på mobilen och den laddar dina meddelanden på en halv sekund är det lätt att tro att allt händer i telefonen. I själva verket har din förfrågan just passerat en router, kanske en mobilmast, flera kablar under mark och hav, och hamnat i en server i ett datacenter, och svaret har tagit samma väg tillbaka. Allt det som gör den resan möjlig kallas <strong>it-infrastruktur</strong>.</p>
+<p>It-infrastruktur är samlingsnamnet för den hårdvara, mjukvara och de regler som gör att datorer kan lagra, bearbeta och utbyta information. Man kan jämföra med vägnätet: vägar, korsningar, trafikljus och trafikregler är inte själva målet med resan, men utan dem kommer ingen fram.</p>
+<p>De viktigaste delarna är:</p>
+<ul>
+<li><strong>Klienter</strong> — de enheter som användare arbetar med: datorer, mobiler, surfplattor, smart-tv. En klient <em>ber om</em> något.</li>
+<li><strong>Servrar</strong> — datorer vars uppgift är att <em>tillhandahålla</em> tjänster åt andra: webbsidor, e-post, filer, spel, video. En server står ofta i ett datacenter och har varken skärm eller tangentbord.</li>
+<li><strong>Nätverk</strong> — förbindelserna mellan enheterna, både den fysiska delen (kablar, radiovågor, nätverksutrustning) och den logiska (adresser och vägval).</li>
+<li><strong>Protokoll</strong> — de gemensamma reglerna för <em>hur</em> kommunikationen går till. Två enheter som inte följer samma protokoll kan inte förstå varandra, på samma sätt som två personer utan gemensamt språk.</li>
+</ul>
+<section id="olika-storlekar-på-nätverk" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="olika-storlekar-på-nätverk"><span class="header-section-number">3.1.1</span> Olika storlekar på nätverk</h3>
+<p>Nätverk delas ofta in efter hur stort område de täcker:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Typ</th>
+<th>Betyder</th>
+<th>Exempel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>PAN</strong></td>
+<td>Personal Area Network</td>
+<td>Mobilen kopplad till trådlösa hörlurar via Bluetooth</td>
+</tr>
+<tr class="even">
+<td><strong>LAN</strong></td>
+<td>Local Area Network</td>
+<td>Nätverket hemma, i ett klassrum eller på ett kontor</td>
+</tr>
+<tr class="odd">
+<td><strong>WAN</strong></td>
+<td>Wide Area Network</td>
+<td>Nätverk som binder samman LAN över stora avstånd. Internet är det största WAN:et</td>
+</tr>
+</tbody>
+</table>
+<p>Internet är alltså inte <em>ett</em> nätverk utan ett nätverk av nätverk: miljontals LAN som är sammankopplade via internetleverantörer och stora stamnät.</p>
+</section>
+</section>
+<section id="nätverkets-grundbyggstenar" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="nätverkets-grundbyggstenar"><span class="header-section-number">3.2</span> Nätverkets grundbyggstenar</h2>
+<p>Ett nätverk består av flera typer av utrustning med olika uppgifter. I företag är de ofta separata lådor; hemma är de nästan alltid inbyggda i en och samma apparat.</p>
+<p><strong>Switch.</strong> En switch kopplar ihop enheter <em>inom</em> samma lokala nätverk. Den håller reda på vilken enhet som sitter i vilken port och skickar varje meddelande bara dit det ska, istället för till alla. En switch är som en postsorterare inne i ett och samma hus.</p>
+<p><strong>Router.</strong> En router kopplar ihop <em>olika</em> nätverk med varandra, till exempel ditt hemnätverk med internet. Den läser mottagaradressen på varje datapaket och väljer vart paketet ska skickas vidare. Routern är som postkontoret som avgör om ett brev ska till grannhuset eller till ett annat land.</p>
+<p><strong>Brandvägg.</strong> En brandvägg granskar trafiken som passerar in och ut ur ett nätverk och blockerar sådant som inte är tillåtet enligt dess regler. Den kan vara en egen enhet, en funktion i routern eller ett program på datorn. Vi återkommer till brandväggar i kapitlen om it-säkerhet.</p>
+<p><strong>Accesspunkt (AP).</strong> En accesspunkt gör det möjligt att ansluta trådlöst via wifi. Den tar emot radiosignaler från enheterna och kopplar in dem i det trådbundna nätverket. I en skola sitter det ofta en accesspunkt i taket i varje korridor.</p>
+<p><strong>Modem.</strong> Ett modem omvandlar signalen från internetleverantörens ledning (fiber, koppar eller mobilnät) till en form som det lokala nätverket kan använda. Med fiber kallas boxen ofta <em>mediaomvandlare</em>.</p>
+<section id="hemrouter-allt-i-en-låda" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="hemrouter-allt-i-en-låda"><span class="header-section-number">3.2.1</span> Hemrouter: allt i en låda</h3>
+<p>Den apparat som hemma kallas “routern” innehåller i regel en router, en enkel brandvägg, en liten switch med några nätverksportar och en accesspunkt för wifi, ibland även modemet. <a href="#fig-hemnatverk" class="quarto-xref">Figur&nbsp;<span>3.1</span></a> visar hur ett typiskt hemnätverk hänger ihop.</p>
+<div id="fig-hemnatverk" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Diagram: internet kopplat till en hemrouter. Från routern går en kabel till en stationär dator och wifi till mobil, laptop och smart-tv. Allt utom internet ligger inom en ram märkt lokalt nätverk.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hemnatverk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../images/hemnatverk.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figur&nbsp;3.1: Ett typiskt hemnätverk. Hemroutern binder samman det lokala nätverket med internet och sköter både kabel- och wifi-anslutningar."><img src="../images/hemnatverk.svg" class="img-fluid figure-img" alt="Diagram: internet kopplat till en hemrouter. Från routern går en kabel till en stationär dator och wifi till mobil, laptop och smart-tv. Allt utom internet ligger inom en ram märkt lokalt nätverk."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hemnatverk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figur&nbsp;3.1: Ett typiskt hemnätverk. Hemroutern binder samman det lokala nätverket med internet och sköter både kabel- och wifi-anslutningar.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tips</span>Kabel eller wifi?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En nätverkskabel ger nästan alltid stabilare och snabbare förbindelse än wifi, eftersom radiosignaler störs av väggar, avstånd och grannarnas nätverk. Spelar du onlinespel eller har videomöten och sitter nära routern är kabel ofta värt besväret.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="hur-enheter-kommunicerar" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="hur-enheter-kommunicerar"><span class="header-section-number">3.3</span> Hur enheter kommunicerar</h2>
+<section id="datapaket" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="datapaket"><span class="header-section-number">3.3.1</span> Datapaket</h3>
+<p>Information skickas inte som en enda lång ström genom nätet. Den delas upp i små <strong>paket</strong>, ofta runt 1 500 byte styck. Varje paket får en etikett med avsändare, mottagare och ordningsnummer. Paketen kan ta olika vägar genom nätet och sätts ihop i rätt ordning hos mottagaren. Om ett paket försvinner på vägen kan just det paketet skickas om, utan att allt behöver börja från början.</p>
+</section>
+<section id="ip-adresser" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="ip-adresser"><span class="header-section-number">3.3.2</span> IP-adresser</h3>
+<p>För att paketen ska hitta rätt måste varje enhet ha en adress. Den kallas <strong>IP-adress</strong> (IP = <em>Internet Protocol</em>). En IPv4-adress består av fyra tal mellan 0 och 255, till exempel:</p>
+<pre><code>192.168.1.23</code></pre>
+<p>Fyra sådana tal ger drygt 4 miljarder möjliga adresser. Det låter mycket, men räcker inte till alla världens enheter. Därför finns två lösningar som du stöter på dagligen:</p>
+<ul>
+<li><strong>Privata adresser.</strong> Inom ett LAN används adresser som bara gäller lokalt, oftast <code>192.168.x.x</code> eller <code>10.x.x.x</code>. Samma privata adress kan alltså finnas i miljontals hem samtidigt.</li>
+<li><strong>NAT</strong> (<em>Network Address Translation</em>). Hemroutern har <em>en</em> publik adress utåt mot internet och översätter mellan den och alla privata adresser innanför. För omvärlden ser hela ditt hushåll ut som en enda enhet.</li>
+</ul>
+<p>Den nyare versionen <strong>IPv6</strong> har så många adresser att varje enhet på jorden kan få en egen publik adress med enorm marginal. En IPv6-adress ser ut så här: <code>2001:db8:85a3::8a2e:370:7334</code>.</p>
+<p>Du behöver sällan ställa in adresser själv. När en enhet ansluter till ett nätverk frågar den automatiskt routern efter en adress via ett protokoll som heter <strong>DHCP</strong>. Routern delar ut en ledig adress och berättar samtidigt vilken router som är <em>standardgateway</em> (utgången mot andra nätverk) och vilken DNS-server enheten ska använda.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Viktigt</span>Tre adresser att känna igen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><code>192.168.x.x</code> eller <code>10.x.x.x</code> — privat adress i ett lokalt nätverk</li>
+<li><code>127.0.0.1</code> — “den här datorn själv” (kallas <em>localhost</em>)</li>
+<li><code>169.254.x.x</code> — enheten fick ingen adress av DHCP. Om du ser den här är något fel med anslutningen.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="dns-internets-telefonkatalog" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="dns-internets-telefonkatalog"><span class="header-section-number">3.3.3</span> DNS — internets telefonkatalog</h3>
+<p>Människor kommer ihåg namn som <code>svt.se</code>, datorer behöver siffror. <strong>DNS</strong> (<em>Domain Name System</em>) är tjänsten som översätter domännamn till IP-adresser. Varje gång du skriver en webbadress frågar din dator först en DNS-server vilken IP-adress som hör till namnet. Svaret sparas en stund i datorn, så att nästa besök går snabbare.</p>
+<p>Om DNS slutar fungera upplever användarna det som att “internet ligger nere”, trots att alla kablar och servrar fungerar. Enheterna hittar helt enkelt inte fram.</p>
+</section>
+<section id="klientserver-modellen" class="level3" data-number="3.3.4">
+<h3 data-number="3.3.4" class="anchored" data-anchor-id="klientserver-modellen"><span class="header-section-number">3.3.4</span> Klient–server-modellen</h3>
+<p>Det mesta på internet bygger på samma mönster: en <strong>klient</strong> skickar en <em>förfrågan</em> och en <strong>server</strong> skickar ett <em>svar</em>. <a href="#fig-dns" class="quarto-xref">Figur&nbsp;<span>3.2</span></a> visar vad som händer när du skriver <code>svt.se</code> i webbläsaren.</p>
+<div id="fig-dns" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Diagram med fyra numrerade pilar: datorn frågar en DNS-server om IP-adressen för svt.se, får ett svar, skickar sedan en förfrågan till webbservern och får tillbaka webbsidan.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dns-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../images/dns-klient-server.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figur&nbsp;3.2: Från adress till webbsida. Först frågar klienten DNS om rätt IP-adress (1–2), sedan hämtas själva sidan från webbservern (3–4). IP-adressen i figuren är ett påhittat exempel."><img src="../images/dns-klient-server.svg" class="img-fluid figure-img" alt="Diagram med fyra numrerade pilar: datorn frågar en DNS-server om IP-adressen för svt.se, får ett svar, skickar sedan en förfrågan till webbservern och får tillbaka webbsidan."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dns-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figur&nbsp;3.2: Från adress till webbsida. Först frågar klienten DNS om rätt IP-adress (1–2), sedan hämtas själva sidan från webbservern (3–4). IP-adressen i figuren är ett påhittat exempel.
+</figcaption>
+</figure>
+</div>
+<p>Steg 3 och 4 följer protokollet <strong>HTTPS</strong>, som bestämmer hur förfrågningar och svar ska se ut och att trafiken ska vara krypterad. En enda webbsida kräver ofta hundratals sådana förfrågningar: en för HTML-koden, och sedan en för varje bild, typsnitt, skript och annons.</p>
+<p>Samma modell gäller för e-post, molnlagring, streaming och de flesta spel. Det som skiljer är vilket protokoll som används och vilken sorts server som svarar.</p>
+</section>
+<section id="portar" class="level3" data-number="3.3.5">
+<h3 data-number="3.3.5" class="anchored" data-anchor-id="portar"><span class="header-section-number">3.3.5</span> Portar</h3>
+<p>En server kan köra många tjänster samtidigt, till exempel både webb och e-post. För att paket ska hamna hos rätt tjänst används <strong>portnummer</strong>. IP-adressen anger <em>vilken dator</em>, porten anger <em>vilken tjänst</em> på datorn, ungefär som gatuadress och lägenhetsnummer.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Tjänst</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>53</td>
+<td>DNS</td>
+</tr>
+<tr class="even">
+<td>80</td>
+<td>HTTP (okrypterad webb)</td>
+</tr>
+<tr class="odd">
+<td>443</td>
+<td>HTTPS (krypterad webb)</td>
+</tr>
+</tbody>
+</table>
+<div class="reflektera">
+<p>Din dator har en privat adress som <code>192.168.1.23</code>. Hur kan svaret från en webbserver på andra sidan jorden hitta tillbaka till just din dator, när tusentals andra hem har exakt samma adress?</p>
+</div>
+</section>
+</section>
+<section id="övningar" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="övningar"><span class="header-section-number">3.4</span> Övningar</h2>
+<ol type="1">
+<li>Förklara med egna ord skillnaden mellan en <strong>switch</strong> och en <strong>router</strong>. Använd gärna en liknelse.</li>
+<li>Varför räcker inte IPv4-adresserna till alla enheter i världen, och vilka två lösningar används idag?</li>
+<li>En klasskamrat säger: “Internet ligger nere, men Discord fungerar fortfarande.” Vad kan vara fel? Ge minst två förklaringar.</li>
+<li>Beskriv steg för steg vad som händer från att du skriver <code>youtube.com</code> i webbläsaren till att sidan visas. Använd begreppen <em>klient</em>, <em>server</em>, <em>DNS</em>, <em>IP-adress</em> och <em>paket</em>.</li>
+<li>Varför kan det vara klokt att en skola har separata wifi-nät för elever, personal och gäster?</li>
+</ol>
+</section>
+<section id="laborationer" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="laborationer"><span class="header-section-number">3.5</span> Laborationer</h2>
+<p>I laborationerna arbetar du med riktiga verktyg som nätverkstekniker använder varje dag. Skriv ner dina resultat i ett dokument med en rubrik per laboration.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Varning</span>Spelregler
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Undersök bara nätverk och utrustning som du själv äger eller har uttryckligt tillstånd att undersöka. Att logga in på någon annans utrustning utan lov är dataintrång, ett brott enligt svensk lag. Att skanna eller testa skolans nätverk bryter mot skolans regler även om det inte alltid är ett brott. Kommandona i laborationerna nedan är ofarliga och tillåtna.</p>
+</div>
+</div>
+<section id="lab-1-din-dators-nätverksidentitet" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="lab-1-din-dators-nätverksidentitet"><span class="header-section-number">3.5.1</span> Lab 1: Din dators nätverksidentitet</h3>
+<p><strong>Mål:</strong> Ta reda på vilken IP-adress, standardgateway och DNS-server din dator använder.</p>
+<p>Öppna en terminal (Windows: sök på <code>cmd</code> eller <em>Terminal</em>. Mac: <em>Terminal</em> under Program → Verktygsprogram).</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">macOS</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<pre><code>ipconfig /all</code></pre>
+<p>Leta under det nätverkskort du använder (oftast <em>Wi-Fi</em> eller <em>Ethernet</em>).</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<pre><code>ipconfig getifaddr en0
+route -n get default
+scutil --dns | grep nameserver</code></pre>
+<p>Den första raden ger IP-adressen, den andra standardgatewayen (raden <code>gateway:</code>), den tredje DNS-servrarna.</p>
+</div>
+</div>
+</div>
+<p>Fyll i tabellen:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Uppgift</th>
+<th>Ditt värde</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>IP-adress (IPv4)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Är adressen privat eller publik?</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Standardgateway</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>DNS-server</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Fysisk adress (MAC)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Sök sedan på <em>what is my IP</em> i webbläsaren. Jämför adressen du får med den i tabellen. Varför skiljer de sig? Koppla till begreppet NAT.</p>
+</section>
+<section id="lab-2-ping-finns-du-där" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="lab-2-ping-finns-du-där"><span class="header-section-number">3.5.2</span> Lab 2: Ping — finns du där?</h3>
+<p><strong>Mål:</strong> Mäta hur lång tid det tar för ett paket att nå en annan dator och tillbaka.</p>
+<p><code>ping</code> skickar ett litet paket och mäter svarstiden i millisekunder (ms).</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">macOS</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<pre><code>ping 127.0.0.1
+ping &lt;din standardgateway&gt;
+ping svt.se
+ping google.com</code></pre>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<pre><code>ping -c 4 127.0.0.1
+ping -c 4 &lt;din standardgateway&gt;
+ping -c 4 svt.se
+ping -c 4 google.com</code></pre>
+</div>
+</div>
+</div>
+<ol type="1">
+<li>Notera medelsvarstiden för varje mål.</li>
+<li>Ordna målen från snabbast till långsammast. Förklara ordningen. Varför svarar <code>127.0.0.1</code> snabbast?</li>
+<li>Pinga en server som ligger långt bort, till exempel en universitetssida i Australien (<code>unimelb.edu.au</code>) eller Japan (<code>u-tokyo.ac.jp</code>). Ljus i en fiberkabel färdas ungefär 200 000 km/s. Uppskatta avståndet till servern och beräkna den teoretiskt snabbaste svarstiden fram och tillbaka. Hur nära kommer den uppmätta tiden?</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tips</span>Inget svar?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Många nätverk och servrar blockerar ping av säkerhetsskäl. Får du <em>Request timed out</em> betyder det inte nödvändigtvis att servern är nere. Prova ett annat mål.</p>
+</div>
+</div>
+</section>
+<section id="lab-3-traceroute-paketens-resväg" class="level3" data-number="3.5.3">
+<h3 data-number="3.5.3" class="anchored" data-anchor-id="lab-3-traceroute-paketens-resväg"><span class="header-section-number">3.5.3</span> Lab 3: Traceroute — paketens resväg</h3>
+<p><strong>Mål:</strong> Se vilka routrar ett paket passerar på vägen till en server.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">macOS</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<pre><code>tracert svt.se</code></pre>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<pre><code>traceroute svt.se</code></pre>
+</div>
+</div>
+</div>
+<p>Varje rad är ett “hopp”, det vill säga en router på vägen.</p>
+<ol type="1">
+<li>Hur många hopp tar det att nå <code>svt.se</code>? Och en server i ett annat land?</li>
+<li>Vilket hopp är din egen hemrouter eller skolans router? Hur vet du det?</li>
+<li>Vid något hopp brukar svarstiden öka kraftigt. Vad tror du händer där?</li>
+<li>Rita resvägen som en kedja: din dator → router → … → servern.</li>
+</ol>
+</section>
+<section id="lab-4-dns-detektiven" class="level3" data-number="3.5.4">
+<h3 data-number="3.5.4" class="anchored" data-anchor-id="lab-4-dns-detektiven"><span class="header-section-number">3.5.4</span> Lab 4: DNS-detektiven</h3>
+<p><strong>Mål:</strong> Slå upp domännamn manuellt och undersöka DNS-svar.</p>
+<p>Kommandot är detsamma i Windows och macOS:</p>
+<pre><code>nslookup svt.se
+nslookup google.com
+nslookup skolverket.se</code></pre>
+<ol type="1">
+<li><p>Vilka IP-adresser fick du för varje domän? Får någon domän flera adresser? Varför kan det vara bra?</p></li>
+<li><p>Raden <code>Server:</code> i svaret visar vilken DNS-server som svarade. Stämmer den med Lab 1?</p></li>
+<li><p>Fråga en annan DNS-server och jämför svaren:</p>
+<pre><code>nslookup google.com 1.1.1.1
+nslookup google.com 8.8.8.8</code></pre>
+<p>Får du samma svar? Varför kan stora tjänster ge olika svar beroende på var du frågar ifrån?</p></li>
+<li><p>Kopiera en av IP-adresserna du fick för <code>svt.se</code> och klistra in den direkt i webbläsarens adressfält. Vad händer? Förklara varför det inte alltid fungerar.</p></li>
+</ol>
+</section>
+<section id="lab-5-se-klientserver-live-i-webbläsaren" class="level3" data-number="3.5.5">
+<h3 data-number="3.5.5" class="anchored" data-anchor-id="lab-5-se-klientserver-live-i-webbläsaren"><span class="header-section-number">3.5.5</span> Lab 5: Se klient–server live i webbläsaren</h3>
+<p><strong>Mål:</strong> Observera alla förfrågningar som krävs för att visa en enda webbsida.</p>
+<ol type="1">
+<li>Öppna Chrome, Edge eller Firefox och tryck <strong>F12</strong> (Mac: <code>Cmd + Option + I</code>).</li>
+<li>Välj fliken <strong>Network</strong> (Nätverk).</li>
+<li>Gå till en nyhetssajt och ladda om sidan med <strong>F5</strong>.</li>
+<li>Studera listan:
+<ul>
+<li>Hur många förfrågningar (<em>requests</em>) gjordes? Siffran står längst ner.</li>
+<li>Hur mycket data överfördes totalt?</li>
+<li>Klicka på den första raden. Vilken statuskod fick du (t.ex. <code>200</code>)? Vilken IP-adress och port hade servern (<em>Remote Address</em>)?</li>
+<li>Hur många olika domäner hämtades innehåll från? Vilka av dem är inte nyhetssajten själv, och vad gör de?</li>
+</ul></li>
+<li>Gör samma sak med en enkel sida, till exempel <code>example.com</code>. Jämför antalet förfrågningar.</li>
+</ol>
+</section>
+<section id="lab-6-rita-ett-nätverk" class="level3" data-number="3.5.6">
+<h3 data-number="3.5.6" class="anchored" data-anchor-id="lab-6-rita-ett-nätverk"><span class="header-section-number">3.5.6</span> Lab 6: Rita ett nätverk</h3>
+<p><strong>Mål:</strong> Visa att du förstår hur nätverkets delar hänger ihop.</p>
+<p>Rita ditt hemnätverk (eller ett påhittat) i <a href="https://app.diagrams.net">draw.io</a> eller på papper. Ritningen ska innehålla:</p>
+<ul>
+<li>anslutningen mot internet,</li>
+<li>routern och vilka funktioner den har (router, switch, brandvägg, AP),</li>
+<li>minst fem anslutna enheter, markerade som trådbundna eller trådlösa,</li>
+<li>en IP-adress vid varje enhet som är rimlig för ett hemnätverk,</li>
+<li>routerns publika och privata sida.</li>
+</ul>
+<p>Om du gör ritningen hemma och har tillåtelse av den som äger routern kan du logga in i routerns app eller titta på etiketten på routern för att se den riktiga modellen och listan över anslutna enheter. Är det fler eller färre enheter än du trodde?</p>
+<p><strong>Fördjupning:</strong> Rita sedan nätverket för en liten verksamhet, till exempel en frisörsalong med kassasystem, gäst-wifi och en övervakningskamera. Vilka delar skulle du separera från varandra, och varför?</p>
+</section>
+<section id="extra-bygg-ett-nätverk-i-packet-tracer" class="level3" data-number="3.5.7">
+<h3 data-number="3.5.7" class="anchored" data-anchor-id="extra-bygg-ett-nätverk-i-packet-tracer"><span class="header-section-number">3.5.7</span> Extra: Bygg ett nätverk i Packet Tracer</h3>
+<p>Cisco Packet Tracer är ett gratis simuleringsprogram där du kan bygga nätverk med virtuella routrar, switchar och datorer. Det kräver ett gratis konto via Cisco Networking Academy.</p>
+<ol type="1">
+<li>Bygg ett nätverk med två datorer, en switch och en router.</li>
+<li>Ge datorerna IP-adresser i samma nät, till exempel <code>192.168.1.10</code> och <code>192.168.1.11</code>.</li>
+<li>Pinga från den ena datorn till den andra i simuleringen.</li>
+<li>Byt till <em>Simulation mode</em> och se hur paketen förflyttas steg för steg.</li>
+</ol>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopierat!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopierat!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../kapitel/02-manniskan-och-tekniken.html" class="pagination-link" aria-label="Människan och den digitala tekniken">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Människan och den digitala tekniken</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../kapitel/04-datalagring.html" class="pagination-link" aria-label="Datalagring och filhantering">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Datalagring och filhantering</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>

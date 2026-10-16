@@ -1,0 +1,19 @@
+# Projektarbete och problemlösning
+
+::: {.callout-note appearance="minimal"}
+**Centralt innehåll som behandlas i detta kapitel**
+
+- Arbete i projektform och problemlösning med hjälp av programmering och anpassning av hårdvara.
+:::
+
+## Att arbeta i projektform
+
+*[Att fyllas i: enkel projektmodell — mål, avgränsning, genomförande, utvärdering.]*
+
+## Kursens projekt
+
+*[Att fyllas i: beskrivning av ett sammanhållet projekt som knyter ihop kapitel 3–7, t.ex. bygga och driftsätta en enkel nätverksansluten lösning.]*
+
+## Övningar
+
+*[Att fyllas i: projektinstruktion, bedömningsstöd.]*

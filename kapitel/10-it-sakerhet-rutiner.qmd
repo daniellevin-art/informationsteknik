@@ -1,0 +1,23 @@
+# IT-säkerhet: rutiner och arbetssätt
+
+::: {.callout-note appearance="minimal"}
+**Centralt innehåll som behandlas i detta kapitel**
+
+- Riktlinjer, rutiner och arbetssätt inom it-säkerhet.
+:::
+
+## Grundläggande skyddsåtgärder
+
+*[Att fyllas i: lösenordshantering, uppdateringar, säkerhetskopiering.]*
+
+## Riktlinjer och rutiner i organisationer
+
+*[Att fyllas i: policyer, åtkomstkontroll, incidenthantering på en introducerande nivå.]*
+
+## Sammanfattning av kursen
+
+*[Att fyllas i: koppling tillbaka till kursens tre spår och brygga mot Nivå 2.]*
+
+## Övningar
+
+*[Att fyllas i.]*

@@ -1,0 +1,11 @@
+# Lägg in/ersätt detta i din befintliga _quarto.yml
+
+lang: sv            # ger "Figur 1.1" istället för "Figure 1.1" i korsreferenser
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss]   # cosmo som bas, våra färger ovanpå
+    fig-align: center
+    fig-cap-location: bottom
+    lightbox: true                 # klicka på en bild för att förstora den

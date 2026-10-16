@@ -1,0 +1,35 @@
+project:
+  type: book
+
+lang: sv
+
+book:
+  title: "Informationsteknik Nivå 1"
+  subtitle: "Kursbok för INFA1000X (Gy25)"
+  author: "Daniel"
+  date: today
+  chapters:
+    - index.qmd
+    - kapitel/01-introduktion.qmd
+    - kapitel/02-manniskan-och-tekniken.qmd
+    - kapitel/03-it-infrastruktur.qmd
+    - kapitel/04-datalagring.qmd
+    - kapitel/05-datorns-hardvara.qmd
+    - kapitel/06-operativsystem.qmd
+    - kapitel/07-programmerbar-hardvara.qmd
+    - kapitel/08-projektarbete.qmd
+    - kapitel/09-it-sakerhet-risker.qmd
+    - kapitel/10-it-sakerhet-rutiner.qmd
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss]
+    fig-align: center
+    fig-cap-location: bottom
+    lightbox: true
+  pdf:
+    documentclass: report
+    toc: true
+    number-sections: true
+    fig-pos: "H"          # bilderna stannar där de står i texten

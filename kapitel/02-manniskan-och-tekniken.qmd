@@ -1,0 +1,23 @@
+# Människan och den digitala tekniken
+
+::: {.callout-note appearance="minimal"}
+**Centralt innehåll som behandlas i detta kapitel**
+
+- Orientering om informationsteknikens möjligheter och begränsningar utifrån människans interaktion med digitala system.
+:::
+
+## Vad är interaktion mellan människa och digitala system?
+
+*[Att fyllas i: människa–dator-interaktion (HCI) som fält, gränssnitt, användbarhet.]*
+
+## Möjligheter
+
+*[Att fyllas i: tillgänglighet, effektivitet, personanpassning, assisterande teknik.]*
+
+## Begränsningar
+
+*[Att fyllas i: kognitiv belastning, digitalt utanförskap, beroendeframkallande design, felkällor i mänsklig-digital interaktion.]*
+
+## Övningar
+
+*[Att fyllas i.]*

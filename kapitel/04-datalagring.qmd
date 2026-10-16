@@ -1,0 +1,28 @@
+# Datalagring och filhantering
+
+::: {.callout-note appearance="minimal"}
+**Centralt innehåll som behandlas i detta kapitel**
+
+- Datalagring och filhantering samt överföring av data, lokalt och i molntjänster.
+- Hur val av lagringsplats påverkar funktionalitet, prestanda och säkerhet.
+:::
+
+## Lokal lagring
+
+*[Att fyllas i: HDD, SSD, filsystem, mappstruktur.]*
+
+## Molnlagring
+
+*[Att fyllas i: vad molnet faktiskt är, för- och nackdelar jämfört med lokal lagring.]*
+
+## Att välja lagringsplats
+
+*[Att fyllas i: avvägning mellan funktionalitet, prestanda och säkerhet i olika scenarier.]*
+
+## Överföring av data
+
+*[Att fyllas i: synkronisering, bandbredd, latens på en introducerande nivå.]*
+
+## Övningar
+
+*[Att fyllas i.]*

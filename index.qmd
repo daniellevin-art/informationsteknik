@@ -1,0 +1,26 @@
+# Förord {.unnumbered}
+
+Den här boken täcker kursen **Informationsteknik, Nivå 1 (INFA1000X, 100 poäng)** enligt Gy25. Kursen läses inom Teknikprogrammets inriktningar och som programfördjupning, och bygger vidare mot Nivå 2 (INFA2000X).
+
+## Om ämnet
+
+Informationsteknik är centralt för att samhället ska fungera. Ämnet behandlar uppbyggnaden av it-infrastruktur och den roll som digital teknik har för både individer och samhälle, samt etiska och säkerhetsmässiga aspekter inom området.
+
+Undervisningen ska ge eleverna möjlighet att utveckla:
+
+- Kunskaper om informationsteknik och it-användning.
+- Kunskaper om it-infrastruktur samt om datorns delar och funktioner.
+- Förmåga att lösa problem med hjälp av programmering och anpassning av hårdvara.
+- Förmåga att värdera säkerhetsmässiga aspekter inom området.
+
+## Kursens tre huvudspår
+
+Det centrala innehållet för Nivå 1 är organiserat i tre områden som löper genom hela boken:
+
+1. **Dator- och informationsteknik** – hur IT har utvecklats, hur människan interagerar med digitala system, hur it-infrastruktur är uppbyggd, hur data lagras och överförs, samt datorns hårdvara och operativsystem.
+2. **Problemlösning med digital teknik** – hårdvarans funktioner och komponenter, samt arbete i projektform där programmering och hårdvaruanpassning används för att lösa problem.
+3. **It-säkerhet** – vanliga säkerhetsrisker samt riktlinjer, rutiner och arbetssätt för att hantera dem.
+
+## Hur boken är upplagd
+
+Varje kapitel inleds med tydliga målsättningar kopplade till det centrala innehållet, följt av teori, exempel och övningar. Flera kapitel knyter an till ett genomgående praktiskt projekt där eleverna själva bygger, konfigurerar och felsöker enkla IT-lösningar — i linje med kursens krav på arbete i projektform.

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" font-family="Source Sans 3, Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Tidslinje över informationsteknikens utveckling</title>
+  <rect width="900" height="300" fill="#ffffff"/>
+
+  <!-- Tidslinje -->
+  <line x1="40" y1="150" x2="850" y2="150" stroke="#509dab" stroke-width="6" stroke-linecap="round"/>
+  <polygon points="850,138 875,150 850,162" fill="#509dab"/>
+
+  <!-- Steg 1 -->
+  <g>
+    <circle cx="120" cy="150" r="14" fill="#ffffff" stroke="#509dab" stroke-width="5"/>
+    <text x="120" y="110" text-anchor="middle" font-size="16" font-weight="700" fill="#a85f05">1940–50-tal</text>
+    <text x="120" y="200" text-anchor="middle" font-size="17" font-weight="700" fill="#2f6e7a">Mekanik → elektronik</text>
+    <text x="120" y="224" text-anchor="middle" font-size="14" fill="#26323a">reläer, elektronrör,</text>
+    <text x="120" y="242" text-anchor="middle" font-size="14" fill="#26323a">transistorer</text>
+  </g>
+  <!-- Steg 2 -->
+  <g>
+    <circle cx="345" cy="150" r="14" fill="#ffffff" stroke="#509dab" stroke-width="5"/>
+    <text x="345" y="110" text-anchor="middle" font-size="16" font-weight="700" fill="#a85f05">1970–80-tal</text>
+    <text x="345" y="200" text-anchor="middle" font-size="17" font-weight="700" fill="#2f6e7a">Stordator → persondator</text>
+    <text x="345" y="224" text-anchor="middle" font-size="14" fill="#26323a">mikroprocessorn gör</text>
+    <text x="345" y="242" text-anchor="middle" font-size="14" fill="#26323a">datorn personlig</text>
+  </g>
+  <!-- Steg 3 -->
+  <g>
+    <circle cx="565" cy="150" r="14" fill="#ffffff" stroke="#509dab" stroke-width="5"/>
+    <text x="565" y="110" text-anchor="middle" font-size="16" font-weight="700" fill="#a85f05">1990-tal</text>
+    <text x="565" y="200" text-anchor="middle" font-size="17" font-weight="700" fill="#2f6e7a">Internet</text>
+    <text x="565" y="224" text-anchor="middle" font-size="14" fill="#26323a">datorer kopplas</text>
+    <text x="565" y="242" text-anchor="middle" font-size="14" fill="#26323a">samman globalt</text>
+  </g>
+  <!-- Steg 4 -->
+  <g>
+    <circle cx="775" cy="150" r="14" fill="#e38812" stroke="#e38812" stroke-width="5"/>
+    <text x="775" y="110" text-anchor="middle" font-size="16" font-weight="700" fill="#a85f05">2000-tal –</text>
+    <text x="775" y="200" text-anchor="middle" font-size="17" font-weight="700" fill="#2f6e7a">Mobilt &amp; moln</text>
+    <text x="775" y="224" text-anchor="middle" font-size="14" fill="#26323a">smartphones och</text>
+    <text x="775" y="242" text-anchor="middle" font-size="14" fill="#26323a">datacenter</text>
+  </g>
+
+  <text x="40" y="45" font-size="22" font-weight="700" fill="#26323a">Från räknemaskin till moln</text>
+  <text x="40" y="70" font-size="14" fill="#6b7780">Varje steg gjorde datorer snabbare, billigare, mindre – och mer sammankopplade.</text>
+</svg>

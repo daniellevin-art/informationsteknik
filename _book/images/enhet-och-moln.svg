@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" font-family="Source Sans 3, Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Den lokala enheten som ett fönster mot molnet</title>
+  <defs>
+    <marker id="pil" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e38812"/>
+    </marker>
+  </defs>
+  <rect width="760" height="340" fill="#ffffff"/>
+
+  <!-- Enheter till vänster -->
+  <!-- Mobil -->
+  <rect x="60" y="60" width="70" height="120" rx="12" fill="#e8f3f5" stroke="#509dab" stroke-width="3"/>
+  <rect x="70" y="76" width="50" height="84" rx="3" fill="#ffffff" stroke="#509dab" stroke-width="1.5"/>
+  <circle cx="95" cy="170" r="4" fill="#509dab"/>
+  <!-- Laptop -->
+  <rect x="160" y="180" width="120" height="78" rx="6" fill="#e8f3f5" stroke="#509dab" stroke-width="3"/>
+  <rect x="170" y="190" width="100" height="58" rx="2" fill="#ffffff" stroke="#509dab" stroke-width="1.5"/>
+  <path d="M145,258 L295,258 L305,272 L135,272 Z" fill="#509dab"/>
+  <text x="170" y="310" text-anchor="middle" font-size="18" font-weight="700" fill="#2f6e7a">Lokala enheter</text>
+  <text x="170" y="330" text-anchor="middle" font-size="14" fill="#6b7780">skärm, inmatning, lite lagring</text>
+
+  <!-- Pilar -->
+  <path d="M300,190 C380,190 420,170 480,150" fill="none" stroke="#e38812" stroke-width="3.5" marker-end="url(#pil)" marker-start="url(#pil)"/>
+  <path d="M140,100 C260,60 380,80 480,120" fill="none" stroke="#e38812" stroke-width="3.5" stroke-dasharray="8 6" marker-end="url(#pil)" marker-start="url(#pil)"/>
+  <text x="390" y="215" text-anchor="middle" font-size="14" fill="#a85f05">internet</text>
+
+  <!-- Moln -->
+  <path d="M520,190 C470,190 465,130 515,128 C515,80 585,65 610,105 C640,75 705,95 695,140 C735,145 730,195 690,195 Z"
+        fill="#e8f3f5" stroke="#509dab" stroke-width="3"/>
+  <!-- Servrar i molnet -->
+  <g fill="#ffffff" stroke="#2f6e7a" stroke-width="2">
+    <rect x="545" y="125" width="40" height="52" rx="3"/>
+    <rect x="595" y="115" width="40" height="62" rx="3"/>
+    <rect x="645" y="130" width="34" height="47" rx="3"/>
+  </g>
+  <g stroke="#509dab" stroke-width="2">
+    <line x1="552" y1="138" x2="578" y2="138"/><line x1="552" y1="150" x2="578" y2="150"/><line x1="552" y1="162" x2="578" y2="162"/>
+    <line x1="602" y1="128" x2="628" y2="128"/><line x1="602" y1="140" x2="628" y2="140"/><line x1="602" y1="152" x2="628" y2="152"/><line x1="602" y1="164" x2="628" y2="164"/>
+    <line x1="651" y1="143" x2="673" y2="143"/><line x1="651" y1="155" x2="673" y2="155"/>
+  </g>
+  <text x="610" y="235" text-anchor="middle" font-size="18" font-weight="700" fill="#2f6e7a">Molnet (datacenter)</text>
+  <text x="610" y="255" text-anchor="middle" font-size="14" fill="#6b7780">lagring och beräkning</text>
+  <text x="610" y="273" text-anchor="middle" font-size="14" fill="#6b7780">någon helt annanstans</text>
+</svg>

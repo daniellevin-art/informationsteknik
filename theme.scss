@@ -1,0 +1,140 @@
+/*-- scss:defaults --*/
+
+// ---------------------------------------------------------------
+// Informationsteknik Nivå 1 – färgtema
+// Turkos = huvudfärg (struktur, länkar, rubriker)
+// Orange = accent (sparsamt: markeringar, linjer, "viktigt")
+// ---------------------------------------------------------------
+
+$turkos:        #163c42;
+$turkos-mork:   #2f6e7a;   // för text/länkar – bättre kontrast mot vitt
+$turkos-ljus:   #e8f3f5;   // bakgrunder
+$orange:        #ee8f13;
+$orange-ljus:   #f88c4d;   // bakgrunder
+$text:          #273742;
+$gra:           #376181;
+
+
+// Stödfärger – används bara där de betyder något
+$gron:          #5f9a5a;   // tips, "så här gör du rätt"
+$rod:           #c4553d;   // varning, säkerhetsrisker (terrakotta – harmonierar med orange)
+
+// Bootstrap / Quarto
+$primary:           $turkos;
+$secondary:         $orange;
+$body-color:        $text;
+$link-color:        $turkos-mork;
+$link-hover-color:  $orange;
+$headings-color:    $turkos-mork;
+
+$font-family-sans-serif: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+$headings-font-weight: 600;
+$code-color: $turkos-mork;
+
+// Callouts
+$callout-color-note:      $turkos;   // fakta, centralt innehåll
+$callout-color-tip:       $gron;     // tips
+$callout-color-important: $orange;   // viktigt att komma ihåg
+$callout-color-warning:   $rod;      // varning / säkerhetsrisk
+$callout-color-caution:   $rod;
+
+// Sidomeny och toppmeny
+$sidebar-fg:         $text;
+$sidebar-active:     $turkos-mork;
+$navbar-bg:          $turkos;
+$navbar-fg:          #ffffff;
+
+/*-- scss:rules --*/
+
+// Typsnitt
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap");
+
+// Kapitelrubrik med orange understrykning
+h1.title, .quarto-title h1 {
+  color: $turkos-mork;
+  padding-bottom: .35rem;
+  border-bottom: 4px solid $orange;
+  display: inline-block;
+}
+
+// Avsnittsrubriker med turkos linje
+h2 {
+  border-bottom: 2px solid $turkos-ljus;
+  padding-bottom: .25rem;
+  margin-top: 2.2rem;
+}
+
+h3 { color: $text; }
+
+// Fetstil-inledningar i brödtext ("Från mekanik till elektronik.")
+p > strong:first-child { color: $turkos-mork; }
+
+// Listpunkter i turkos
+ul li::marker { color: $turkos; }
+ol li::marker { color: $orange; font-weight: 700; }
+
+// Aktiv sida i sidomenyn
+.sidebar-item .active,
+.sidebar nav[role="doc-toc"] ul > li > a.active {
+  color: $turkos-mork !important;
+  border-left-color: $orange !important;
+  font-weight: 600;
+}
+
+// Figurer
+.quarto-figure img, figure img {
+  border-radius: 6px;
+}
+.figure-caption, figcaption {
+  color: $gra;
+  font-size: .9rem;
+  margin-top: .4rem;
+}
+// Foton får en tunn ram, illustrationer (svg) inte
+.foto img {
+  border: 1px solid #dfe5e8;
+  box-shadow: 0 2px 8px rgba(38, 50, 58, .08);
+}
+// Källhänvisning under foton
+.bildkalla {
+  font-size: .75rem;
+  color: $gra;
+  margin-top: -.6rem;
+  margin-bottom: 1.2rem;
+}
+
+// Blocket "Centralt innehåll" (callout-note appearance=minimal)
+.callout.callout-style-simple.callout-note,
+.callout.callout-style-default.callout-note {
+  background: $turkos-ljus;
+  border-left-color: $turkos !important;
+}
+
+// Egen ruta: "Reflektera" – används som ::: {.reflektera}
+.reflektera {
+  background: $orange-ljus;
+  border-left: 5px solid $orange;
+  border-radius: 4px;
+  padding: .9rem 1.1rem;
+  margin: 1.5rem 0;
+  &::before {
+    content: "Reflektera";
+    display: block;
+    font-weight: 700;
+    color: $turkos-mork;
+    margin-bottom: .3rem;
+  }
+  p:last-child { margin-bottom: 0; }
+}
+
+// Övningsrubriken får orange markering
+#övningar h2, h2#övningar, section#övningar > h2 {
+  border-bottom: 3px solid $orange;
+}
+
+// Tabeller
+.table thead th {
+  background: $turkos-ljus;
+  color: $turkos-mork;
+  border-bottom: 2px solid $turkos;
+}

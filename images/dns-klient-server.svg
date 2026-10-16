@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" font-family="Source Sans 3, Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Vad händer när du skriver svt.se i webbläsaren</title>
+  <defs>
+    <marker id="p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e38812"/>
+    </marker>
+    <marker id="pt" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#509dab"/>
+    </marker>
+  </defs>
+  <rect width="900" height="400" fill="#ffffff"/>
+
+  <!-- Klient -->
+  <rect x="40" y="150" width="170" height="110" rx="10" fill="#e8f3f5" stroke="#509dab" stroke-width="3"/>
+  <text x="125" y="185" text-anchor="middle" font-size="18" font-weight="700" fill="#2f6e7a">Din dator</text>
+  <text x="125" y="207" text-anchor="middle" font-size="13" fill="#6b7780">(klient)</text>
+  <rect x="58" y="222" width="134" height="24" rx="12" fill="#ffffff" stroke="#509dab" stroke-width="1.5"/>
+  <text x="125" y="239" text-anchor="middle" font-size="13" fill="#26323a">svt.se</text>
+
+  <!-- DNS -->
+  <rect x="640" y="30" width="220" height="90" rx="10" fill="#ffffff" stroke="#e38812" stroke-width="3"/>
+  <text x="750" y="65" text-anchor="middle" font-size="18" font-weight="700" fill="#a85f05">DNS-server</text>
+  <text x="750" y="88" text-anchor="middle" font-size="13" fill="#6b7780">internets "telefonkatalog"</text>
+
+  <!-- Webbserver -->
+  <rect x="640" y="270" width="220" height="100" rx="10" fill="#ffffff" stroke="#509dab" stroke-width="3"/>
+  <text x="750" y="305" text-anchor="middle" font-size="18" font-weight="700" fill="#2f6e7a">Webbserver</text>
+  <text x="750" y="327" text-anchor="middle" font-size="13" fill="#6b7780">(server)</text>
+  <text x="750" y="350" text-anchor="middle" font-size="13" fill="#26323a">IP: 203.0.113.10</text>
+
+  <!-- 1 fråga DNS -->
+  <path d="M215,160 L630,70" stroke="#e38812" stroke-width="3" fill="none" marker-end="url(#p)"/>
+  <circle cx="390" cy="98" r="14" fill="#e38812"/><text x="390" y="104" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">1</text>
+  <text x="410" y="88" font-size="14" fill="#26323a">Vilken IP har svt.se?</text>
+
+  <!-- 2 svar DNS -->
+  <path d="M630,105 L215,190" stroke="#e38812" stroke-width="3" stroke-dasharray="7 5" fill="none" marker-end="url(#p)"/>
+  <circle cx="440" cy="160" r="14" fill="#e38812"/><text x="440" y="166" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">2</text>
+  <text x="460" y="170" font-size="14" fill="#26323a">203.0.113.10</text>
+
+  <!-- 3 begäran -->
+  <path d="M215,230 L630,300" stroke="#509dab" stroke-width="3" fill="none" marker-end="url(#pt)"/>
+  <circle cx="390" cy="258" r="14" fill="#509dab"/><text x="390" y="264" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">3</text>
+  <text x="410" y="250" font-size="14" fill="#26323a">Skicka mig startsidan</text>
+
+  <!-- 4 svar -->
+  <path d="M630,340 L215,255" stroke="#509dab" stroke-width="3" stroke-dasharray="7 5" fill="none" marker-end="url(#pt)"/>
+  <circle cx="440" cy="314" r="14" fill="#509dab"/><text x="440" y="320" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">4</text>
+  <text x="418" y="332" text-anchor="end" font-size="14" fill="#26323a">Här är HTML, bilder …</text>
+</svg>

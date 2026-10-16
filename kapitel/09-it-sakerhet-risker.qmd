@@ -1,0 +1,19 @@
+# IT-säkerhet: risker
+
+::: {.callout-note appearance="minimal"}
+**Centralt innehåll som behandlas i detta kapitel**
+
+- Några vanliga säkerhetsrisker i samband med lagring av data och vid informationshantering.
+:::
+
+## Vanliga hot
+
+*[Att fyllas i: skadlig kod, nätfiske, dataintrång, mänskliga faktorn.]*
+
+## Risker kopplade till lagring
+
+*[Att fyllas i: förlust, obehörig åtkomst, dataintegritet.]*
+
+## Övningar
+
+*[Att fyllas i: fallstudier av kända säkerhetsincidenter.]*

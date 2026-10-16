@@ -1,0 +1,442 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Informationsteknik Nivå 1",
+    "section": "",
+    "text": "Förord\nDen här boken täcker kursen Informationsteknik, Nivå 1 (INFA1000X, 100 poäng) enligt Gy25. Kursen läses inom Teknikprogrammets inriktningar och som programfördjupning, och bygger vidare mot Nivå 2 (INFA2000X).",
+    "crumbs": [
+      "Förord"
+    ]
+  },
+  {
+    "objectID": "index.html#om-ämnet",
+    "href": "index.html#om-ämnet",
+    "title": "Informationsteknik Nivå 1",
+    "section": "Om ämnet",
+    "text": "Om ämnet\nInformationsteknik är centralt för att samhället ska fungera. Ämnet behandlar uppbyggnaden av it-infrastruktur och den roll som digital teknik har för både individer och samhälle, samt etiska och säkerhetsmässiga aspekter inom området.\nUndervisningen ska ge eleverna möjlighet att utveckla:\n\nKunskaper om informationsteknik och it-användning.\nKunskaper om it-infrastruktur samt om datorns delar och funktioner.\nFörmåga att lösa problem med hjälp av programmering och anpassning av hårdvara.\nFörmåga att värdera säkerhetsmässiga aspekter inom området.",
+    "crumbs": [
+      "Förord"
+    ]
+  },
+  {
+    "objectID": "index.html#kursens-tre-huvudspår",
+    "href": "index.html#kursens-tre-huvudspår",
+    "title": "Informationsteknik Nivå 1",
+    "section": "Kursens tre huvudspår",
+    "text": "Kursens tre huvudspår\nDet centrala innehållet för Nivå 1 är organiserat i tre områden som löper genom hela boken:\n\nDator- och informationsteknik – hur IT har utvecklats, hur människan interagerar med digitala system, hur it-infrastruktur är uppbyggd, hur data lagras och överförs, samt datorns hårdvara och operativsystem.\nProblemlösning med digital teknik – hårdvarans funktioner och komponenter, samt arbete i projektform där programmering och hårdvaruanpassning används för att lösa problem.\nIt-säkerhet – vanliga säkerhetsrisker samt riktlinjer, rutiner och arbetssätt för att hantera dem.",
+    "crumbs": [
+      "Förord"
+    ]
+  },
+  {
+    "objectID": "index.html#hur-boken-är-upplagd",
+    "href": "index.html#hur-boken-är-upplagd",
+    "title": "Informationsteknik Nivå 1",
+    "section": "Hur boken är upplagd",
+    "text": "Hur boken är upplagd\nVarje kapitel inleds med tydliga målsättningar kopplade till det centrala innehållet, följt av teori, exempel och övningar. Flera kapitel knyter an till ett genomgående praktiskt projekt där eleverna själva bygger, konfigurerar och felsöker enkla IT-lösningar — i linje med kursens krav på arbete i projektform.",
+    "crumbs": [
+      "Förord"
+    ]
+  },
+  {
+    "objectID": "kapitel/01-introduktion.html",
+    "href": "kapitel/01-introduktion.html",
+    "title": "1  Introduktion till informationsteknik",
+    "section": "",
+    "text": "1.1 Vad är informationsteknik?\nInformationsteknik (IT) handlar om hur vi skapar, lagrar, bearbetar och delar information med hjälp av digital teknik — datorer, nätverk, mjukvara och de infrastrukturer som binder samman allt detta. Termen används ofta tillsammans med eller utbytbart mot IKT (informations- och kommunikationsteknik), där kommunikationsdelen betonar hur information förflyttas mellan människor och system.\nI den här kursen kommer du att arbeta med IT ur tre perspektiv som återkommer genom hela boken (Figur 1.1):",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduktion till informationsteknik</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/01-introduktion.html#vad-är-informationsteknik",
+    "href": "kapitel/01-introduktion.html#vad-är-informationsteknik",
+    "title": "1  Introduktion till informationsteknik",
+    "section": "",
+    "text": "Tekniken i sig — hur datorer, nätverk och lagringssystem är uppbyggda och fungerar.\nMänniskan och tekniken — hur vi interagerar med digitala system, och vilka möjligheter och begränsningar det innebär.\nSäkerheten — hur vi skyddar information och system från hot och missbruk.\n\n\n\n\n\n\n\nFigur 1.1: De tre perspektiven överlappar. De flesta frågor i kursen berör mer än ett av dem samtidigt.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduktion till informationsteknik</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/01-introduktion.html#en-kort-historik-över-informationstekniken",
+    "href": "kapitel/01-introduktion.html#en-kort-historik-över-informationstekniken",
+    "title": "1  Introduktion till informationsteknik",
+    "section": "1.2 En kort historik över informationstekniken",
+    "text": "1.2 En kort historik över informationstekniken\nAtt förstå var vi kommer ifrån gör det lättare att förstå varför dagens IT-system ser ut som de gör. Figur 1.2 ger en översikt över de fyra stora stegen.\n\n\n\n\n\n\nFigur 1.2: Informationsteknikens utveckling i fyra steg.\n\n\n\nFrån mekanik till elektronik. De första räknemaskinerna var mekaniska. Under 1900-talets mitt ersattes mekaniska komponenter successivt av elektroniska — först med reläer och elektronrör, sedan med transistorer och till sist med integrerade kretsar. Varje steg gjorde datorerna snabbare, billigare och mindre.\n\n\n\n\n\n\n\n\n\nFigur 1.3: ENIAC (1946) byggdes med drygt 17 000 elektronrör och fyllde ett helt rum.\n\n\n\n\n\n\n\n\n\n\n\nFigur 1.4: Kopia av den första transistorn från Bell Labs (1947). Transistorn ersatte så småningom elektronröret.\n\n\n\n\n\n\n\nBilder: U.S. Army Photo (ENIAC) och U.S. federal government (transistor), public domain, via Wikimedia Commons.\n\nFrån stordatorer till persondatorer. Fram till 1970-talet var datorer stora, dyra maskiner som delades av många användare samtidigt (så kallad time-sharing). Med mikroprocessorns intåg blev det möjligt att bygga persondatorer — datorer som en enskild person kunde äga och använda själv. Detta var en förutsättning för att IT skulle bli en del av vardagen snarare än enbart en resurs för stora organisationer.\nFrån isolerade datorer till internet. Persondatorer som inte kan kommunicera med varandra har begränsat värde. Utvecklingen av nätverksteknik — och till sist internet, som växte fram ur forskningsprojekt under 1960–1980-talen — gjorde det möjligt att koppla samman datorer världen över. Detta är den enskilt viktigaste förutsättningen för dagens digitala samhälle.\nFrån stationära datorer till mobilitet och moln. De senaste decennierna har präglats av två parallella trender: dels att datorkraft har blivit bärbar och ständigt närvarande (smartphones, surfplattor, wearables), dels att lagring och beräkning i allt högre grad flyttat från den enskilda enheten till centraliserade datacenter — molnet. Idag är det ofta en kombination: en lokal enhet som är ett fönster mot resurser som egentligen finns någon helt annanstans (Figur 1.5).\n\n\n\n\n\n\nFigur 1.5: Mobilen och datorn visar och samlar in information, men det mesta lagras och beräknas i datacenter.\n\n\n\n\nTänk på din egen mobil. Vilka av dina appar skulle fortfarande fungera om den tappade all internetuppkoppling i en vecka?",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduktion till informationsteknik</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/01-introduktion.html#digitaliseringens-effekter-på-individen",
+    "href": "kapitel/01-introduktion.html#digitaliseringens-effekter-på-individen",
+    "title": "1  Introduktion till informationsteknik",
+    "section": "1.3 Digitaliseringens effekter på individen",
+    "text": "1.3 Digitaliseringens effekter på individen\nDigitaliseringen har förändrat vardagen på sätt som är lätta att ta för givna. Några exempel att reflektera kring:\n\nTillgång till information. Kunskap som tidigare krävde ett bibliotek eller en expert finns nu ofta tillgänglig direkt, vilket förändrar hur vi lär oss och fattar beslut.\nKommunikation. Avstånd spelar mindre roll för vem vi kan nå och hur snabbt. Samtidigt förändras kommunikationens karaktär — färre telefonsamtal, mer skriftlig, asynkron kommunikation.\nArbete och lärande. Distansarbete, digitala läromedel och nya yrkesroller (många av dem inom IT) hade inte varit möjliga utan digitaliseringen.\nIdentitet och integritet. Vi lämnar digitala spår i princip konstant. Det väcker frågor om vem som äger och kontrollerar information om oss — något vi återkommer till i kapitlet om it-säkerhet.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduktion till informationsteknik</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/01-introduktion.html#digitaliseringens-effekter-på-samhället",
+    "href": "kapitel/01-introduktion.html#digitaliseringens-effekter-på-samhället",
+    "title": "1  Introduktion till informationsteknik",
+    "section": "1.4 Digitaliseringens effekter på samhället",
+    "text": "1.4 Digitaliseringens effekter på samhället\nPå samhällsnivå syns digitaliseringens effekter bland annat i:\n\nEkonomi. Nya affärsmodeller (plattformsekonomi, e-handel, prenumerationstjänster) hade varit omöjliga utan robust IT-infrastruktur.\nDemokrati och offentlig sektor. Digitala tjänster (som svenska e-legitimationer och myndigheters e-tjänster) förändrar hur medborgare möter samhället — med både ökad tillgänglighet och nya krav på digital kompetens för att kunna delta fullt ut.\nHållbarhet. Digital teknik kan både bidra till minskad resursförbrukning (färre transporter, effektivare processer) och orsaka ökad förbrukning (energikrävande datacenter, kortare livslängd på hårdvara, elektronikavfall). Detta är en avvägning som återkommer i flera av kursens moment.\nSårbarhet. Ju mer ett samhälle är beroende av digital infrastruktur, desto större blir konsekvenserna när den infrastrukturen fallerar eller angrips — vilket är en del av bakgrunden till varför it-säkerhet är ett eget spår i denna kurs.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduktion till informationsteknik</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/01-introduktion.html#övningar",
+    "href": "kapitel/01-introduktion.html#övningar",
+    "title": "1  Introduktion till informationsteknik",
+    "section": "1.5 Övningar",
+    "text": "1.5 Övningar\n\nLista tre digitala tjänster du använde under det senaste dygnet. För var och en: vad hade du behövt göra istället om tjänsten inte funnits?\nVälj ett av utvecklingsstegen i Figur 1.2 (till exempel övergången till internet, eller till molntjänster). Diskutera i par: vilken möjlighet öppnade detta steg, och vilken ny sårbarhet eller begränsning införde det samtidigt?\nTa reda på ett exempel på en digital tjänst som förbättrat tillgängligheten till samhället för en grupp människor (till exempel personer med funktionsnedsättning, eller nyanlända). Presentera kort för gruppen.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduktion till informationsteknik</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/02-manniskan-och-tekniken.html",
+    "href": "kapitel/02-manniskan-och-tekniken.html",
+    "title": "2  Människan och den digitala tekniken",
+    "section": "",
+    "text": "2.1 Vad är interaktion mellan människa och digitala system?\n[Att fyllas i: människa–dator-interaktion (HCI) som fält, gränssnitt, användbarhet.]",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Människan och den digitala tekniken</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/02-manniskan-och-tekniken.html#möjligheter",
+    "href": "kapitel/02-manniskan-och-tekniken.html#möjligheter",
+    "title": "2  Människan och den digitala tekniken",
+    "section": "2.2 Möjligheter",
+    "text": "2.2 Möjligheter\n[Att fyllas i: tillgänglighet, effektivitet, personanpassning, assisterande teknik.]",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Människan och den digitala tekniken</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/02-manniskan-och-tekniken.html#begränsningar",
+    "href": "kapitel/02-manniskan-och-tekniken.html#begränsningar",
+    "title": "2  Människan och den digitala tekniken",
+    "section": "2.3 Begränsningar",
+    "text": "2.3 Begränsningar\n[Att fyllas i: kognitiv belastning, digitalt utanförskap, beroendeframkallande design, felkällor i mänsklig-digital interaktion.]",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Människan och den digitala tekniken</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/02-manniskan-och-tekniken.html#övningar",
+    "href": "kapitel/02-manniskan-och-tekniken.html#övningar",
+    "title": "2  Människan och den digitala tekniken",
+    "section": "2.4 Övningar",
+    "text": "2.4 Övningar\n[Att fyllas i.]",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Människan och den digitala tekniken</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/03-it-infrastruktur.html",
+    "href": "kapitel/03-it-infrastruktur.html",
+    "title": "3  IT-infrastrukturens uppbyggnad",
+    "section": "",
+    "text": "3.1 Vad är it-infrastruktur?\nNär du öppnar en app på mobilen och den laddar dina meddelanden på en halv sekund är det lätt att tro att allt händer i telefonen. I själva verket har din förfrågan just passerat en router, kanske en mobilmast, flera kablar under mark och hav, och hamnat i en server i ett datacenter, och svaret har tagit samma väg tillbaka. Allt det som gör den resan möjlig kallas it-infrastruktur.\nIt-infrastruktur är samlingsnamnet för den hårdvara, mjukvara och de regler som gör att datorer kan lagra, bearbeta och utbyta information. Man kan jämföra med vägnätet: vägar, korsningar, trafikljus och trafikregler är inte själva målet med resan, men utan dem kommer ingen fram.\nDe viktigaste delarna är:",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>IT-infrastrukturens uppbyggnad</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/03-it-infrastruktur.html#nätverkets-grundbyggstenar",
+    "href": "kapitel/03-it-infrastruktur.html#nätverkets-grundbyggstenar",
+    "title": "3  IT-infrastrukturens uppbyggnad",
+    "section": "3.2 Nätverkets grundbyggstenar",
+    "text": "3.2 Nätverkets grundbyggstenar\nEtt nätverk består av flera typer av utrustning med olika uppgifter. I företag är de ofta separata lådor; hemma är de nästan alltid inbyggda i en och samma apparat.\nSwitch. En switch kopplar ihop enheter inom samma lokala nätverk. Den håller reda på vilken enhet som sitter i vilken port och skickar varje meddelande bara dit det ska, istället för till alla. En switch är som en postsorterare inne i ett och samma hus.\nRouter. En router kopplar ihop olika nätverk med varandra, till exempel ditt hemnätverk med internet. Den läser mottagaradressen på varje datapaket och väljer vart paketet ska skickas vidare. Routern är som postkontoret som avgör om ett brev ska till grannhuset eller till ett annat land.\nBrandvägg. En brandvägg granskar trafiken som passerar in och ut ur ett nätverk och blockerar sådant som inte är tillåtet enligt dess regler. Den kan vara en egen enhet, en funktion i routern eller ett program på datorn. Vi återkommer till brandväggar i kapitlen om it-säkerhet.\nAccesspunkt (AP). En accesspunkt gör det möjligt att ansluta trådlöst via wifi. Den tar emot radiosignaler från enheterna och kopplar in dem i det trådbundna nätverket. I en skola sitter det ofta en accesspunkt i taket i varje korridor.\nModem. Ett modem omvandlar signalen från internetleverantörens ledning (fiber, koppar eller mobilnät) till en form som det lokala nätverket kan använda. Med fiber kallas boxen ofta mediaomvandlare.\n\n3.2.1 Hemrouter: allt i en låda\nDen apparat som hemma kallas “routern” innehåller i regel en router, en enkel brandvägg, en liten switch med några nätverksportar och en accesspunkt för wifi, ibland även modemet. Figur 3.1 visar hur ett typiskt hemnätverk hänger ihop.\n\n\n\n\n\n\nFigur 3.1: Ett typiskt hemnätverk. Hemroutern binder samman det lokala nätverket med internet och sköter både kabel- och wifi-anslutningar.\n\n\n\n\n\n\n\n\n\nTipsKabel eller wifi?\n\n\n\nEn nätverkskabel ger nästan alltid stabilare och snabbare förbindelse än wifi, eftersom radiosignaler störs av väggar, avstånd och grannarnas nätverk. Spelar du onlinespel eller har videomöten och sitter nära routern är kabel ofta värt besväret.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>IT-infrastrukturens uppbyggnad</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/03-it-infrastruktur.html#hur-enheter-kommunicerar",
+    "href": "kapitel/03-it-infrastruktur.html#hur-enheter-kommunicerar",
+    "title": "3  IT-infrastrukturens uppbyggnad",
+    "section": "3.3 Hur enheter kommunicerar",
+    "text": "3.3 Hur enheter kommunicerar\n\n3.3.1 Datapaket\nInformation skickas inte som en enda lång ström genom nätet. Den delas upp i små paket, ofta runt 1 500 byte styck. Varje paket får en etikett med avsändare, mottagare och ordningsnummer. Paketen kan ta olika vägar genom nätet och sätts ihop i rätt ordning hos mottagaren. Om ett paket försvinner på vägen kan just det paketet skickas om, utan att allt behöver börja från början.\n\n\n3.3.2 IP-adresser\nFör att paketen ska hitta rätt måste varje enhet ha en adress. Den kallas IP-adress (IP = Internet Protocol). En IPv4-adress består av fyra tal mellan 0 och 255, till exempel:\n192.168.1.23\nFyra sådana tal ger drygt 4 miljarder möjliga adresser. Det låter mycket, men räcker inte till alla världens enheter. Därför finns två lösningar som du stöter på dagligen:\n\nPrivata adresser. Inom ett LAN används adresser som bara gäller lokalt, oftast 192.168.x.x eller 10.x.x.x. Samma privata adress kan alltså finnas i miljontals hem samtidigt.\nNAT (Network Address Translation). Hemroutern har en publik adress utåt mot internet och översätter mellan den och alla privata adresser innanför. För omvärlden ser hela ditt hushåll ut som en enda enhet.\n\nDen nyare versionen IPv6 har så många adresser att varje enhet på jorden kan få en egen publik adress med enorm marginal. En IPv6-adress ser ut så här: 2001:db8:85a3::8a2e:370:7334.\nDu behöver sällan ställa in adresser själv. När en enhet ansluter till ett nätverk frågar den automatiskt routern efter en adress via ett protokoll som heter DHCP. Routern delar ut en ledig adress och berättar samtidigt vilken router som är standardgateway (utgången mot andra nätverk) och vilken DNS-server enheten ska använda.\n\n\n\n\n\n\nViktigtTre adresser att känna igen\n\n\n\n\n192.168.x.x eller 10.x.x.x — privat adress i ett lokalt nätverk\n127.0.0.1 — “den här datorn själv” (kallas localhost)\n169.254.x.x — enheten fick ingen adress av DHCP. Om du ser den här är något fel med anslutningen.\n\n\n\n\n\n3.3.3 DNS — internets telefonkatalog\nMänniskor kommer ihåg namn som svt.se, datorer behöver siffror. DNS (Domain Name System) är tjänsten som översätter domännamn till IP-adresser. Varje gång du skriver en webbadress frågar din dator först en DNS-server vilken IP-adress som hör till namnet. Svaret sparas en stund i datorn, så att nästa besök går snabbare.\nOm DNS slutar fungera upplever användarna det som att “internet ligger nere”, trots att alla kablar och servrar fungerar. Enheterna hittar helt enkelt inte fram.\n\n\n3.3.4 Klient–server-modellen\nDet mesta på internet bygger på samma mönster: en klient skickar en förfrågan och en server skickar ett svar. Figur 3.2 visar vad som händer när du skriver svt.se i webbläsaren.\n\n\n\n\n\n\nFigur 3.2: Från adress till webbsida. Först frågar klienten DNS om rätt IP-adress (1–2), sedan hämtas själva sidan från webbservern (3–4). IP-adressen i figuren är ett påhittat exempel.\n\n\n\nSteg 3 och 4 följer protokollet HTTPS, som bestämmer hur förfrågningar och svar ska se ut och att trafiken ska vara krypterad. En enda webbsida kräver ofta hundratals sådana förfrågningar: en för HTML-koden, och sedan en för varje bild, typsnitt, skript och annons.\nSamma modell gäller för e-post, molnlagring, streaming och de flesta spel. Det som skiljer är vilket protokoll som används och vilken sorts server som svarar.\n\n\n3.3.5 Portar\nEn server kan köra många tjänster samtidigt, till exempel både webb och e-post. För att paket ska hamna hos rätt tjänst används portnummer. IP-adressen anger vilken dator, porten anger vilken tjänst på datorn, ungefär som gatuadress och lägenhetsnummer.\n\n\n\nPort\nTjänst\n\n\n\n\n53\nDNS\n\n\n80\nHTTP (okrypterad webb)\n\n\n443\nHTTPS (krypterad webb)\n\n\n\n\nDin dator har en privat adress som 192.168.1.23. Hur kan svaret från en webbserver på andra sidan jorden hitta tillbaka till just din dator, när tusentals andra hem har exakt samma adress?",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>IT-infrastrukturens uppbyggnad</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/03-it-infrastruktur.html#övningar",
+    "href": "kapitel/03-it-infrastruktur.html#övningar",
+    "title": "3  IT-infrastrukturens uppbyggnad",
+    "section": "3.4 Övningar",
+    "text": "3.4 Övningar\n\nFörklara med egna ord skillnaden mellan en switch och en router. Använd gärna en liknelse.\nVarför räcker inte IPv4-adresserna till alla enheter i världen, och vilka två lösningar används idag?\nEn klasskamrat säger: “Internet ligger nere, men Discord fungerar fortfarande.” Vad kan vara fel? Ge minst två förklaringar.\nBeskriv steg för steg vad som händer från att du skriver youtube.com i webbläsaren till att sidan visas. Använd begreppen klient, server, DNS, IP-adress och paket.\nVarför kan det vara klokt att en skola har separata wifi-nät för elever, personal och gäster?",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>IT-infrastrukturens uppbyggnad</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/04-datalagring.html",
+    "href": "kapitel/04-datalagring.html",
+    "title": "4  Datalagring och filhantering",
+    "section": "",
+    "text": "4.1 Lokal lagring\n[Att fyllas i: HDD, SSD, filsystem, mappstruktur.]",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Datalagring och filhantering</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/04-datalagring.html#molnlagring",
+    "href": "kapitel/04-datalagring.html#molnlagring",
+    "title": "4  Datalagring och filhantering",
+    "section": "4.2 Molnlagring",
+    "text": "4.2 Molnlagring\n[Att fyllas i: vad molnet faktiskt är, för- och nackdelar jämfört med lokal lagring.]",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Datalagring och filhantering</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/04-datalagring.html#att-välja-lagringsplats",
+    "href": "kapitel/04-datalagring.html#att-välja-lagringsplats",
+    "title": "4  Datalagring och filhantering",
+    "section": "4.3 Att välja lagringsplats",
+    "text": "4.3 Att välja lagringsplats\n[Att fyllas i: avvägning mellan funktionalitet, prestanda och säkerhet i olika scenarier.]",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Datalagring och filhantering</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/04-datalagring.html#överföring-av-data",
+    "href": "kapitel/04-datalagring.html#överföring-av-data",
+    "title": "4  Datalagring och filhantering",
+    "section": "4.4 Överföring av data",
+    "text": "4.4 Överföring av data\n[Att fyllas i: synkronisering, bandbredd, latens på en introducerande nivå.]",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Datalagring och filhantering</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/04-datalagring.html#övningar",
+    "href": "kapitel/04-datalagring.html#övningar",
+    "title": "4  Datalagring och filhantering",
+    "section": "4.5 Övningar",
+    "text": "4.5 Övningar\n[Att fyllas i.]",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Datalagring och filhantering</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/05-datorns-hardvara.html",
+    "href": "kapitel/05-datorns-hardvara.html",
+    "title": "5  Datorns hårdvara",
+    "section": "",
+    "text": "5.1 Datorns huvudkomponenter\n[Att fyllas i: CPU, minne (RAM), lagring, moderkort, GPU — översikt.]",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Datorns hårdvara</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/05-datorns-hardvara.html#processortyper-och-användningsområden",
+    "href": "kapitel/05-datorns-hardvara.html#processortyper-och-användningsområden",
+    "title": "5  Datorns hårdvara",
+    "section": "5.2 Processortyper och användningsområden",
+    "text": "5.2 Processortyper och användningsområden\n[Att fyllas i: CPU vs GPU vs mikrokontroller, ARM vs x86, var respektive typ passar.]",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Datorns hårdvara</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/05-datorns-hardvara.html#övningar",
+    "href": "kapitel/05-datorns-hardvara.html#övningar",
+    "title": "5  Datorns hårdvara",
+    "section": "5.3 Övningar",
+    "text": "5.3 Övningar\n[Att fyllas i: t.ex. plocka isär en (avstängd/tömd) dator eller identifiera komponenter från bilder.]",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Datorns hårdvara</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/06-operativsystem.html",
+    "href": "kapitel/06-operativsystem.html",
+    "title": "6  Operativsystem",
+    "section": "",
+    "text": "6.1 Operativsystemets roll\n[Att fyllas i: vad ett OS gör, varför det behövs.]",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Operativsystem</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/06-operativsystem.html#vanliga-operativsystem",
+    "href": "kapitel/06-operativsystem.html#vanliga-operativsystem",
+    "title": "6  Operativsystem",
+    "section": "6.2 Vanliga operativsystem",
+    "text": "6.2 Vanliga operativsystem\n[Att fyllas i: Windows, macOS, Linux (distributioner), mobila OS — egenskaper och skillnader.]",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Operativsystem</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/06-operativsystem.html#övningar",
+    "href": "kapitel/06-operativsystem.html#övningar",
+    "title": "6  Operativsystem",
+    "section": "6.3 Övningar",
+    "text": "6.3 Övningar\n[Att fyllas i: t.ex. praktisk jämförelse i en virtuell maskin eller live-USB.]",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Operativsystem</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/07-programmerbar-hardvara.html",
+    "href": "kapitel/07-programmerbar-hardvara.html",
+    "title": "7  Hårdvara som kan programmeras",
+    "section": "",
+    "text": "7.1 Från fast till programmerbar hårdvara\n[Att fyllas i: skillnad mellan fast logik och programmerbar hårdvara.]",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Hårdvara som kan programmeras</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/07-programmerbar-hardvara.html#enkla-styrexempel",
+    "href": "kapitel/07-programmerbar-hardvara.html#enkla-styrexempel",
+    "title": "7  Hårdvara som kan programmeras",
+    "section": "7.2 Enkla styrexempel",
+    "text": "7.2 Enkla styrexempel\n[Att fyllas i: t.ex. mikrokontroller (Arduino/motsvarande) som styr en enkel komponent — introducerande nivå, ej lika djupt som Teknik 1.]",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Hårdvara som kan programmeras</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/07-programmerbar-hardvara.html#övningar",
+    "href": "kapitel/07-programmerbar-hardvara.html#övningar",
+    "title": "7  Hårdvara som kan programmeras",
+    "section": "7.3 Övningar",
+    "text": "7.3 Övningar\n[Att fyllas i: praktiskt hands-on-moment.]",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Hårdvara som kan programmeras</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/08-projektarbete.html",
+    "href": "kapitel/08-projektarbete.html",
+    "title": "8  Projektarbete och problemlösning",
+    "section": "",
+    "text": "8.1 Att arbeta i projektform\n[Att fyllas i: enkel projektmodell — mål, avgränsning, genomförande, utvärdering.]",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Projektarbete och problemlösning</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/08-projektarbete.html#kursens-projekt",
+    "href": "kapitel/08-projektarbete.html#kursens-projekt",
+    "title": "8  Projektarbete och problemlösning",
+    "section": "8.2 Kursens projekt",
+    "text": "8.2 Kursens projekt\n[Att fyllas i: beskrivning av ett sammanhållet projekt som knyter ihop kapitel 3–7, t.ex. bygga och driftsätta en enkel nätverksansluten lösning.]",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Projektarbete och problemlösning</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/08-projektarbete.html#övningar",
+    "href": "kapitel/08-projektarbete.html#övningar",
+    "title": "8  Projektarbete och problemlösning",
+    "section": "8.3 Övningar",
+    "text": "8.3 Övningar\n[Att fyllas i: projektinstruktion, bedömningsstöd.]",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Projektarbete och problemlösning</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/09-it-sakerhet-risker.html",
+    "href": "kapitel/09-it-sakerhet-risker.html",
+    "title": "9  IT-säkerhet: risker",
+    "section": "",
+    "text": "9.1 Vanliga hot\n[Att fyllas i: skadlig kod, nätfiske, dataintrång, mänskliga faktorn.]",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>IT-säkerhet: risker</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/09-it-sakerhet-risker.html#risker-kopplade-till-lagring",
+    "href": "kapitel/09-it-sakerhet-risker.html#risker-kopplade-till-lagring",
+    "title": "9  IT-säkerhet: risker",
+    "section": "9.2 Risker kopplade till lagring",
+    "text": "9.2 Risker kopplade till lagring\n[Att fyllas i: förlust, obehörig åtkomst, dataintegritet.]",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>IT-säkerhet: risker</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/09-it-sakerhet-risker.html#övningar",
+    "href": "kapitel/09-it-sakerhet-risker.html#övningar",
+    "title": "9  IT-säkerhet: risker",
+    "section": "9.3 Övningar",
+    "text": "9.3 Övningar\n[Att fyllas i: fallstudier av kända säkerhetsincidenter.]",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>IT-säkerhet: risker</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/10-it-sakerhet-rutiner.html",
+    "href": "kapitel/10-it-sakerhet-rutiner.html",
+    "title": "10  IT-säkerhet: rutiner och arbetssätt",
+    "section": "",
+    "text": "10.1 Grundläggande skyddsåtgärder\n[Att fyllas i: lösenordshantering, uppdateringar, säkerhetskopiering.]",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>IT-säkerhet: rutiner och arbetssätt</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/10-it-sakerhet-rutiner.html#riktlinjer-och-rutiner-i-organisationer",
+    "href": "kapitel/10-it-sakerhet-rutiner.html#riktlinjer-och-rutiner-i-organisationer",
+    "title": "10  IT-säkerhet: rutiner och arbetssätt",
+    "section": "10.2 Riktlinjer och rutiner i organisationer",
+    "text": "10.2 Riktlinjer och rutiner i organisationer\n[Att fyllas i: policyer, åtkomstkontroll, incidenthantering på en introducerande nivå.]",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>IT-säkerhet: rutiner och arbetssätt</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/10-it-sakerhet-rutiner.html#sammanfattning-av-kursen",
+    "href": "kapitel/10-it-sakerhet-rutiner.html#sammanfattning-av-kursen",
+    "title": "10  IT-säkerhet: rutiner och arbetssätt",
+    "section": "10.3 Sammanfattning av kursen",
+    "text": "10.3 Sammanfattning av kursen\n[Att fyllas i: koppling tillbaka till kursens tre spår och brygga mot Nivå 2.]",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>IT-säkerhet: rutiner och arbetssätt</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/10-it-sakerhet-rutiner.html#övningar",
+    "href": "kapitel/10-it-sakerhet-rutiner.html#övningar",
+    "title": "10  IT-säkerhet: rutiner och arbetssätt",
+    "section": "10.4 Övningar",
+    "text": "10.4 Övningar\n[Att fyllas i.]",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>IT-säkerhet: rutiner och arbetssätt</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/03-it-infrastruktur.html#vad-är-it-infrastruktur",
+    "href": "kapitel/03-it-infrastruktur.html#vad-är-it-infrastruktur",
+    "title": "3  IT-infrastrukturens uppbyggnad",
+    "section": "",
+    "text": "Klienter — de enheter som användare arbetar med: datorer, mobiler, surfplattor, smart-tv. En klient ber om något.\nServrar — datorer vars uppgift är att tillhandahålla tjänster åt andra: webbsidor, e-post, filer, spel, video. En server står ofta i ett datacenter och har varken skärm eller tangentbord.\nNätverk — förbindelserna mellan enheterna, både den fysiska delen (kablar, radiovågor, nätverksutrustning) och den logiska (adresser och vägval).\nProtokoll — de gemensamma reglerna för hur kommunikationen går till. Två enheter som inte följer samma protokoll kan inte förstå varandra, på samma sätt som två personer utan gemensamt språk.\n\n\n3.1.1 Olika storlekar på nätverk\nNätverk delas ofta in efter hur stort område de täcker:\n\n\n\n\n\n\n\n\nTyp\nBetyder\nExempel\n\n\n\n\nPAN\nPersonal Area Network\nMobilen kopplad till trådlösa hörlurar via Bluetooth\n\n\nLAN\nLocal Area Network\nNätverket hemma, i ett klassrum eller på ett kontor\n\n\nWAN\nWide Area Network\nNätverk som binder samman LAN över stora avstånd. Internet är det största WAN:et\n\n\n\nInternet är alltså inte ett nätverk utan ett nätverk av nätverk: miljontals LAN som är sammankopplade via internetleverantörer och stora stamnät.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>IT-infrastrukturens uppbyggnad</span>"
+    ]
+  },
+  {
+    "objectID": "kapitel/03-it-infrastruktur.html#laborationer",
+    "href": "kapitel/03-it-infrastruktur.html#laborationer",
+    "title": "3  IT-infrastrukturens uppbyggnad",
+    "section": "3.5 Laborationer",
+    "text": "3.5 Laborationer\nI laborationerna arbetar du med riktiga verktyg som nätverkstekniker använder varje dag. Skriv ner dina resultat i ett dokument med en rubrik per laboration.\n\n\n\n\n\n\nVarningSpelregler\n\n\n\nUndersök bara nätverk och utrustning som du själv äger eller har uttryckligt tillstånd att undersöka. Att logga in på någon annans utrustning utan lov är dataintrång, ett brott enligt svensk lag. Att skanna eller testa skolans nätverk bryter mot skolans regler även om det inte alltid är ett brott. Kommandona i laborationerna nedan är ofarliga och tillåtna.\n\n\n\n3.5.1 Lab 1: Din dators nätverksidentitet\nMål: Ta reda på vilken IP-adress, standardgateway och DNS-server din dator använder.\nÖppna en terminal (Windows: sök på cmd eller Terminal. Mac: Terminal under Program → Verktygsprogram).\n\nWindowsmacOS\n\n\nipconfig /all\nLeta under det nätverkskort du använder (oftast Wi-Fi eller Ethernet).\n\n\nipconfig getifaddr en0\nroute -n get default\nscutil --dns | grep nameserver\nDen första raden ger IP-adressen, den andra standardgatewayen (raden gateway:), den tredje DNS-servrarna.\n\n\n\nFyll i tabellen:\n\n\n\nUppgift\nDitt värde\n\n\n\n\nIP-adress (IPv4)\n\n\n\nÄr adressen privat eller publik?\n\n\n\nStandardgateway\n\n\n\nDNS-server\n\n\n\nFysisk adress (MAC)\n\n\n\n\nSök sedan på what is my IP i webbläsaren. Jämför adressen du får med den i tabellen. Varför skiljer de sig? Koppla till begreppet NAT.\n\n\n3.5.2 Lab 2: Ping — finns du där?\nMål: Mäta hur lång tid det tar för ett paket att nå en annan dator och tillbaka.\nping skickar ett litet paket och mäter svarstiden i millisekunder (ms).\n\nWindowsmacOS\n\n\nping 127.0.0.1\nping &lt;din standardgateway&gt;\nping svt.se\nping google.com\n\n\nping -c 4 127.0.0.1\nping -c 4 &lt;din standardgateway&gt;\nping -c 4 svt.se\nping -c 4 google.com\n\n\n\n\nNotera medelsvarstiden för varje mål.\nOrdna målen från snabbast till långsammast. Förklara ordningen. Varför svarar 127.0.0.1 snabbast?\nPinga en server som ligger långt bort, till exempel en universitetssida i Australien (unimelb.edu.au) eller Japan (u-tokyo.ac.jp). Ljus i en fiberkabel färdas ungefär 200 000 km/s. Uppskatta avståndet till servern och beräkna den teoretiskt snabbaste svarstiden fram och tillbaka. Hur nära kommer den uppmätta tiden?\n\n\n\n\n\n\n\nTipsInget svar?\n\n\n\nMånga nätverk och servrar blockerar ping av säkerhetsskäl. Får du Request timed out betyder det inte nödvändigtvis att servern är nere. Prova ett annat mål.\n\n\n\n\n3.5.3 Lab 3: Traceroute — paketens resväg\nMål: Se vilka routrar ett paket passerar på vägen till en server.\n\nWindowsmacOS\n\n\ntracert svt.se\n\n\ntraceroute svt.se\n\n\n\nVarje rad är ett “hopp”, det vill säga en router på vägen.\n\nHur många hopp tar det att nå svt.se? Och en server i ett annat land?\nVilket hopp är din egen hemrouter eller skolans router? Hur vet du det?\nVid något hopp brukar svarstiden öka kraftigt. Vad tror du händer där?\nRita resvägen som en kedja: din dator → router → … → servern.\n\n\n\n3.5.4 Lab 4: DNS-detektiven\nMål: Slå upp domännamn manuellt och undersöka DNS-svar.\nKommandot är detsamma i Windows och macOS:\nnslookup svt.se\nnslookup google.com\nnslookup skolverket.se\n\nVilka IP-adresser fick du för varje domän? Får någon domän flera adresser? Varför kan det vara bra?\nRaden Server: i svaret visar vilken DNS-server som svarade. Stämmer den med Lab 1?\nFråga en annan DNS-server och jämför svaren:\nnslookup google.com 1.1.1.1\nnslookup google.com 8.8.8.8\nFår du samma svar? Varför kan stora tjänster ge olika svar beroende på var du frågar ifrån?\nKopiera en av IP-adresserna du fick för svt.se och klistra in den direkt i webbläsarens adressfält. Vad händer? Förklara varför det inte alltid fungerar.\n\n\n\n3.5.5 Lab 5: Se klient–server live i webbläsaren\nMål: Observera alla förfrågningar som krävs för att visa en enda webbsida.\n\nÖppna Chrome, Edge eller Firefox och tryck F12 (Mac: Cmd + Option + I).\nVälj fliken Network (Nätverk).\nGå till en nyhetssajt och ladda om sidan med F5.\nStudera listan:\n\nHur många förfrågningar (requests) gjordes? Siffran står längst ner.\nHur mycket data överfördes totalt?\nKlicka på den första raden. Vilken statuskod fick du (t.ex. 200)? Vilken IP-adress och port hade servern (Remote Address)?\nHur många olika domäner hämtades innehåll från? Vilka av dem är inte nyhetssajten själv, och vad gör de?\n\nGör samma sak med en enkel sida, till exempel example.com. Jämför antalet förfrågningar.\n\n\n\n3.5.6 Lab 6: Rita ett nätverk\nMål: Visa att du förstår hur nätverkets delar hänger ihop.\nRita ditt hemnätverk (eller ett påhittat) i draw.io eller på papper. Ritningen ska innehålla:\n\nanslutningen mot internet,\nroutern och vilka funktioner den har (router, switch, brandvägg, AP),\nminst fem anslutna enheter, markerade som trådbundna eller trådlösa,\nen IP-adress vid varje enhet som är rimlig för ett hemnätverk,\nrouterns publika och privata sida.\n\nOm du gör ritningen hemma och har tillåtelse av den som äger routern kan du logga in i routerns app eller titta på etiketten på routern för att se den riktiga modellen och listan över anslutna enheter. Är det fler eller färre enheter än du trodde?\nFördjupning: Rita sedan nätverket för en liten verksamhet, till exempel en frisörsalong med kassasystem, gäst-wifi och en övervakningskamera. Vilka delar skulle du separera från varandra, och varför?\n\n\n3.5.7 Extra: Bygg ett nätverk i Packet Tracer\nCisco Packet Tracer är ett gratis simuleringsprogram där du kan bygga nätverk med virtuella routrar, switchar och datorer. Det kräver ett gratis konto via Cisco Networking Academy.\n\nBygg ett nätverk med två datorer, en switch och en router.\nGe datorerna IP-adresser i samma nät, till exempel 192.168.1.10 och 192.168.1.11.\nPinga från den ena datorn till den andra i simuleringen.\nByt till Simulation mode och se hur paketen förflyttas steg för steg.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>IT-infrastrukturens uppbyggnad</span>"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+# Operativsystem
+
+::: {.callout-note appearance="minimal"}
+**Centralt innehåll som behandlas i detta kapitel**
+
+- Några vanliga operativsystem och deras egenskaper.
+:::
+
+## Operativsystemets roll
+
+*[Att fyllas i: vad ett OS gör, varför det behövs.]*
+
+## Vanliga operativsystem
+
+*[Att fyllas i: Windows, macOS, Linux (distributioner), mobila OS — egenskaper och skillnader.]*
+
+## Övningar
+
+*[Att fyllas i: t.ex. praktisk jämförelse i en virtuell maskin eller live-USB.]*
